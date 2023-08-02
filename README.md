@@ -1,0 +1,1 @@
+Shared xamu eslint config

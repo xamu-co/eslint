@@ -57,21 +57,6 @@ jobs:
                   name: Lint & check
                   command: yarn lint
 
-    build:
-        <<: *defaults
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ~/repo
-            - run:
-                  name: Build distributables
-                  command: yarn build
-            - persist_to_workspace:
-                  root: ~/repo
-                  paths:
-                      - commons/**/dist
-                      - components/**/dist
-
     dry_release:
         <<: *defaults
         steps:
@@ -102,13 +87,10 @@ workflows:
             - check_code:
                   requires:
                       - check_commit_message
-            - build:
-                  requires:
-                      - check_code
             - dry_release:
                   context: npm-deploy
                   requires:
-                      - build
+                      - check_code
                   filters:
                       branches:
                           only:
