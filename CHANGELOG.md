@@ -1,5 +1,12 @@
 Xamu's shared eslint rules
 
+## [1.0.1](https://github.com/xamu-co/eslint/compare/v1.0.0...v1.0.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* npm instead on github packages on ci ([37be5cf](https://github.com/xamu-co/eslint/commit/37be5cff8af47226532d8306b413d9f2ee8750c2))
+
 # 1.0.0 (2023-08-03)
 
 
