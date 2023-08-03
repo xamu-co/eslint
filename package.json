@@ -27,7 +27,9 @@
     "yarn": ">=1.22.4"
   },
   "scripts": {
-    "lint": "prettier . --check --ignore-unknown"
+    "lint": "prettier . --check --ignore-unknown",
+    "release": "semantic-release",
+    "release:dry": "semantic-release --dry-run"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
