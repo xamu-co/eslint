@@ -1,5 +1,17 @@
 Xamu's shared eslint rules
 
+# [2.0.0](https://github.com/xamu-co/eslint/compare/v1.0.1...v2.0.0) (2023-08-27)
+
+
+### Features
+
+* use typescript recomended rules ([315916a](https://github.com/xamu-co/eslint/commit/315916aeb331f773a9257783dc9e40dc9c4a7681))
+
+
+### BREAKING CHANGES
+
+* new typescript rules may arise new errors
+
 ## [1.0.1](https://github.com/xamu-co/eslint/compare/v1.0.0...v1.0.1) (2023-08-03)
 
 
