@@ -7,7 +7,7 @@ module.exports = {
 		ecmaVersion: 2020,
 		ecmaFeatures: { globalReturn: false },
 	},
-	extends: ["eslint:recommended"],
+	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
 	plugins: ["@typescript-eslint", "prettier", "import"],
 	rules: {
 		// import
@@ -30,11 +30,18 @@ module.exports = {
 		"no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
 		"no-redeclare": "off",
 		"no-tabs": "off",
-		"no-unused-vars": "off",
 		"no-use-before-define": "off",
 		semi: "off",
 		"space-before-function-paren": "off",
 		"spaced-comment": "off",
+		// typescript
+		"@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+		"@typescript-eslint/no-explicit-any": [
+			"error",
+			{ fixToUnknown: true, ignoreRestArgs: true },
+		],
+		"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
+		"@typescript-eslint/no-var-requires": "off",
 	},
 	settings: {
 		"import/parsers": {
