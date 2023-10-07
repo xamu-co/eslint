@@ -1,5 +1,12 @@
 Xamu's shared eslint rules
 
+# [2.1.0](https://github.com/xamu-co/eslint/compare/v2.0.0...v2.1.0) (2023-10-07)
+
+
+### Features
+
+* allow explicit any ([0467e02](https://github.com/xamu-co/eslint/commit/0467e02056868517198d377f910d2bbda4901ca6))
+
 # [2.0.0](https://github.com/xamu-co/eslint/compare/v1.0.1...v2.0.0) (2023-08-27)
 
 
