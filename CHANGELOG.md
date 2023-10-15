@@ -1,5 +1,12 @@
 Xamu's shared eslint rules
 
+# [2.2.0](https://github.com/xamu-co/eslint/compare/v2.1.0...v2.2.0) (2023-10-15)
+
+
+### Features
+
+* allow explicit types on class properties ([59e36c0](https://github.com/xamu-co/eslint/commit/59e36c0e111c988051e6a8539798eaf9e4e4626b))
+
 # [2.1.0](https://github.com/xamu-co/eslint/compare/v2.0.0...v2.1.0) (2023-10-07)
 
 
