@@ -1,5 +1,17 @@
 Xamu's shared eslint rules
 
+# [3.0.0](https://github.com/xamu-co/eslint/compare/v2.2.0...v3.0.0) (2023-10-22)
+
+
+### Features
+
+* require blanklines ([496f1e7](https://github.com/xamu-co/eslint/commit/496f1e7d2244d9333221fce70f2d566899aba644))
+
+
+### BREAKING CHANGES
+
+* missing blanklines will throw errors
+
 # [2.2.0](https://github.com/xamu-co/eslint/compare/v2.1.0...v2.2.0) (2023-10-15)
 
 
