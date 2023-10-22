@@ -34,6 +34,44 @@ module.exports = {
 		semi: "off",
 		"space-before-function-paren": "off",
 		"spaced-comment": "off",
+		"padding-line-between-statements": [
+			"error",
+			// require blank before
+			{ blankLine: "always", prev: "*", next: ["return", "throw", "continue", "debugger"] },
+			// disallow blank before case declaration
+			{ blankLine: "never", prev: ["case", "default"], next: "*" },
+			// require blank before & after, but not beetween var declaration
+			{ blankLine: "always", prev: ["const", "let", "var"], next: "*" },
+			{ blankLine: "always", prev: "*", next: ["const", "let", "var"] },
+			{ blankLine: "any", prev: ["const", "let", "var"], next: ["const", "let", "var"] },
+			// require blank before & after, but not beetween import statements
+			{ blankLine: "always", prev: "import", next: "*" },
+			{ blankLine: "always", prev: "*", next: "import" },
+			{ blankLine: "any", prev: "import", next: "import" },
+			// require blank before & after, but not beetween export statements
+			{ blankLine: "always", prev: "export", next: "*" },
+			{ blankLine: "always", prev: "*", next: "export" },
+			{ blankLine: "any", prev: "export", next: "export" },
+			// require blank before & after, but not beetween if statements
+			{ blankLine: "always", prev: "if", next: "*" },
+			{ blankLine: "always", prev: "*", next: "if" },
+			{ blankLine: "any", prev: "if", next: "if" },
+			// require blank before & after, but not beetween directive declaration
+			{ blankLine: "always", prev: "directive", next: "*" },
+			{ blankLine: "always", prev: "*", next: "directive" },
+			{ blankLine: "any", prev: "directive", next: "directive" },
+			// require blank before & after
+			{
+				blankLine: "always",
+				prev: ["switch", "try", "for", "while", "do", "iife"],
+				next: "*",
+			},
+			{
+				blankLine: "always",
+				prev: "*",
+				next: ["switch", "try", "for", "while", "do", "iife"],
+			},
+		],
 		// typescript
 		"@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
 		"@typescript-eslint/no-explicit-any": "off",
