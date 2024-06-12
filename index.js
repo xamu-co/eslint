@@ -73,7 +73,10 @@ module.exports = {
 			},
 		],
 		// typescript
-		"@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{ argsIgnorePattern: "^_", ignoreRestSiblings: true },
+		],
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/no-empty-interface": ["error", { allowSingleExtends: true }],
 		"@typescript-eslint/no-var-requires": "off",
