@@ -1,5 +1,12 @@
 Xamu's shared eslint rules
 
+## [3.0.1](https://github.com/xamu-co/eslint/compare/v3.0.0...v3.0.1) (2024-06-12)
+
+
+### Bug Fixes
+
+* **no-unused-vars:** ignoreRestSiblings ([b2b2667](https://github.com/xamu-co/eslint/commit/b2b2667878d033b3a24a713889c9911b99b3b911))
+
 # [3.0.0](https://github.com/xamu-co/eslint/compare/v2.2.0...v3.0.0) (2023-10-22)
 
 
